@@ -1,0 +1,55 @@
+<svg width="1440" height="1024" viewBox="0 0 1440 1024" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_17_2)">
+<rect width="1440" height="1024" fill="white"/>
+<rect x="1.5" y="3.5" width="1437" height="112" stroke="black" stroke-width="3"/>
+<rect x="1.5" y="116.5" width="1437" height="906" stroke="black" stroke-width="3"/>
+<line x1="110" y1="170" x2="334" y2="170" stroke="black" stroke-width="10"/>
+<line x1="110" y1="326" x2="395" y2="326" stroke="black" stroke-width="10"/>
+<line x1="110" y1="464" x2="395" y2="464" stroke="black" stroke-width="10"/>
+<line x1="110" y1="909" x2="395" y2="909" stroke="black" stroke-width="10"/>
+<line x1="110" y1="227.5" x2="473" y2="227.5" stroke="black" stroke-width="15"/>
+<line x1="828" y1="57.5" x2="938" y2="57.5" stroke="black" stroke-width="5"/>
+<line x1="671" y1="57.5" x2="781" y2="57.5" stroke="black" stroke-width="5"/>
+<line x1="981" y1="57.5" x2="1091" y2="57.5" stroke="black" stroke-width="5"/>
+<line x1="1152" y1="57.5" x2="1262" y2="57.5" stroke="black" stroke-width="5"/>
+<line x1="1303" y1="57.5" x2="1413" y2="57.5" stroke="black" stroke-width="5"/>
+<line y1="417.5" x2="1440" y2="417.5" stroke="black" stroke-width="3"/>
+<line x1="6" y1="853.5" x2="1446" y2="853.5" stroke="black" stroke-width="3"/>
+<line x1="1121.68" y1="206.639" x2="1257.88" y2="352.089" stroke="black" stroke-width="3"/>
+<line x1="1123.84" y1="352.054" x2="1266.2" y2="209.686" stroke="black" stroke-width="3"/>
+<circle cx="1193" cy="277" r="100" stroke="black" stroke-width="4"/>
+<rect x="111.5" y="530.5" width="354" height="261" stroke="black" stroke-width="3"/>
+<rect x="120.5" y="952.5" width="147" height="108" stroke="black" stroke-width="3"/>
+<rect x="335.5" y="954.5" width="147" height="108" stroke="black" stroke-width="3"/>
+<rect x="550.5" y="956.5" width="147" height="108" stroke="black" stroke-width="3"/>
+<rect x="765.5" y="958.5" width="147" height="108" stroke="black" stroke-width="3"/>
+<rect x="980.5" y="960.5" width="147" height="108" stroke="black" stroke-width="3"/>
+<rect x="1195.5" y="962.5" width="147" height="108" stroke="black" stroke-width="3"/>
+<line x1="111.886" y1="531.789" x2="465.886" y2="790.789" stroke="black" stroke-width="3"/>
+<line x1="120.306" y1="951.471" x2="269.147" y2="1060.37" stroke="black" stroke-width="3"/>
+<line x1="335.306" y1="953.471" x2="484.147" y2="1062.37" stroke="black" stroke-width="3"/>
+<line x1="550.306" y1="955.471" x2="699.147" y2="1064.37" stroke="black" stroke-width="3"/>
+<line x1="765.306" y1="957.471" x2="914.147" y2="1066.37" stroke="black" stroke-width="3"/>
+<line x1="980.306" y1="959.471" x2="1129.15" y2="1068.37" stroke="black" stroke-width="3"/>
+<line x1="1195.31" y1="961.471" x2="1344.15" y2="1070.37" stroke="black" stroke-width="3"/>
+<line x1="110.119" y1="788.786" x2="464.119" y2="531.786" stroke="black" stroke-width="3"/>
+<line x1="118.539" y1="1059.52" x2="267.38" y2="951.468" stroke="black" stroke-width="3"/>
+<line x1="333.539" y1="1061.52" x2="482.38" y2="953.468" stroke="black" stroke-width="3"/>
+<line x1="548.539" y1="1063.52" x2="697.38" y2="955.468" stroke="black" stroke-width="3"/>
+<line x1="763.539" y1="1065.52" x2="912.38" y2="957.468" stroke="black" stroke-width="3"/>
+<line x1="978.539" y1="1067.52" x2="1127.38" y2="959.468" stroke="black" stroke-width="3"/>
+<line x1="1193.54" y1="1069.52" x2="1342.38" y2="961.468" stroke="black" stroke-width="3"/>
+<line x1="530" y1="517.5" x2="1386" y2="517.5" stroke="black" stroke-width="3"/>
+<line x1="530" y1="700.5" x2="1386" y2="700.5" stroke="black" stroke-width="3"/>
+<line x1="530" y1="559.5" x2="1386" y2="559.5" stroke="black" stroke-width="3"/>
+<line x1="530" y1="742.5" x2="1386" y2="742.5" stroke="black" stroke-width="3"/>
+<line x1="530" y1="602.5" x2="1386" y2="602.5" stroke="black" stroke-width="3"/>
+<line x1="530" y1="785.5" x2="1386" y2="785.5" stroke="black" stroke-width="3"/>
+<line x1="530" y1="660.5" x2="1386" y2="660.5" stroke="black" stroke-width="3"/>
+</g>
+<defs>
+<clipPath id="clip0_17_2">
+<rect width="1440" height="1024" fill="white"/>
+</clipPath>
+</defs>
+</svg>

@@ -1,0 +1,957 @@
+body {
+        margin: 0; /*Removes the default outer space around the body*/
+        padding: 0; /*Removes the inner space inside the body*/
+
+}
+
+/* navigation bar styling (applies to all pages) */
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+} /* ensures that the nav bar stays at the top while scrolling, and in front of all layers */
+
+nav ul { 
+    list-style-type: none; /*Removes bullets*/
+                margin: 0; /*Removes default outer spacing*/
+                padding: 0; /*Removes default inner spacing*/
+                overflow: hidden; /*Keeps floated items contained*/
+                background-color: #c39ab0; /*Sets navbar background colour*/
+
+}
+
+/*Align list items horizontally*/
+nav ul li {
+    float: right; /*Makes items sit side-by-side instead of stacked*/
+}
+
+/* Style the links inside the navbar */
+nav ul li a {
+    display: block; /*Makes the whole area clickable*/
+    color: white; /*Text colour*/
+    text-align: center; /*Centres text*/
+    padding: 18px 10px; /*Adds spacing inside each link*/
+    text-decoration: none; /*Removes underline*/
+    margin-right: 40px;
+
+    font-family: "Sniglet", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+nav ul li a:hover { /* hover pseudoclass */ 
+    background-color: pink;
+}
+
+/* welcome section of home-page */
+
+.welcome{  
+    display:flex;
+
+    align-items: center;
+    justify-content: space-between; /* pushes text and image to the left and right*/
+    gap: 50px; /* space between the text and image */
+    padding: 40px 60px; /* top/bottom, left/right space*/
+    min-height: 300px; /* sets the min height of the box*/
+
+    background-color: #f8f1f5;
+}
+
+.welcome img{
+    width: 350px;
+    margin-right: 10px; /*push image a bit inward*/
+}
+
+.hello-text {
+    font-size: 40px;
+    margin-bottom: 0px;
+    font-family: 'Borel', cursive;
+    font-weight: 600;
+    color: rgb(64, 93, 64);
+}
+
+.name-text {
+    font-size: 110px;
+    margin: 0;
+    font-family: 'Borel', cursive;
+    font-weight: 700;
+    font-style: normal;
+    color: rgb(104, 151, 104);
+}
+
+.subtitle {
+    font-size: 20px;
+    font-family: "Sniglet", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(64, 93, 64);
+
+}
+
+/* about section of home-page */
+.about{
+    padding: 20px 60px;
+    
+    background-color: rgb(220 241 209);
+}
+
+.about h2 {
+    font-size: 50px;
+    margin-bottom: 5px;
+
+    font-family: 'Borel', cursive;
+    font-weight: 600;
+
+    color: rgb(64, 93, 64);
+}
+
+.about-row{
+    display: flex; /* a flex container to put elements side by side */
+    align-items: flex-start; /* to align image and text to the top */
+    gap: 120px; /* gap between text and image */
+}
+
+.about img{
+    width: 500px;
+}
+
+.about-text{
+    max-width: 650px; /* to prevent the text from stretching too wide */
+
+    font-size: 18px;
+    line-height: 1.5; /*spacing between the lines */
+    font-family: "Sniglet", system-ui;
+    font-weight: 400;
+    font-style: normal;
+
+}
+/* skills section of home-page */
+
+.skills{
+    gap: 40px;
+    padding: 20px 60px;
+
+    background-color: #f8f1f5;
+}
+
+.skills p {
+    font-size: 14px;
+    line-height: 1.5; /*spacing between the lines */
+    font-family: "Sniglet", system-ui;
+    font-weight: 400;
+    font-style: normal;
+
+    color: rgb(64, 93, 64);
+
+    text-align: left;
+
+}
+
+.skills h2 {
+    font-size: 50px;
+    margin-bottom: 15px;
+
+    font-family: 'Borel', cursive;
+    font-weight: 600;
+
+    color: rgb(64, 93, 64);
+}
+
+.skills-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.skills-row img {
+    width: 110px;
+    height: auto;
+}
+
+/* next/highlights section of home-page */
+
+.next{
+    gap: 50px;
+    padding: 20px 60px;
+
+    background-color: rgb(220 241 209);
+
+}
+
+.next h2 {
+    font-size: 50px;
+    margin-bottom: 15px;
+
+    font-family: 'Borel', cursive;
+    font-weight: 600;
+
+    color: rgb(64, 93, 64);
+}
+
+
+.next-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /*take all of the horizontal space of the row */
+}
+
+.next-row img {
+    width: 200px;
+    height: auto;
+}
+
+.next-row img:hover {
+    border-radius: 15px;
+    border: 3px solid rgb(127, 26, 81) /* rounded border effect when the mouse hovers */
+}
+
+/* footer */
+footer{
+    padding: 10px;
+    height: 40px;
+    background-color: #c39ab0;
+
+    font-family: "Sniglet", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color:  rgb(127, 26, 81);
+
+    text-align: right;
+}
+
+
+/* portfolio page styling*/
+
+.title1{
+    background-color: #e4d4dc;
+    padding: 40px 0;
+    
+}
+
+.title1 h1 {
+    font-size: 70px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-family: 'Borel', cursive;
+    font-weight: 700;
+    font-style: normal;
+    color: rgb(127, 26, 81);
+    text-align: center;
+
+
+}
+
+.title1 .subtitle {
+    font-size: 20px;
+    margin-top: 0;
+    text-align: center;
+}
+
+.design-projects {
+    background-color: #f8f1f5; 
+    padding-bottom: 40px;
+}
+
+.design-projects h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+    margin-top: 20px;
+
+    font-family: 'Borel', cursive;
+    font-weight: 600;
+
+    color: rgb(127, 26, 81);
+}
+/* project 1 styling*/
+.project1row{
+    display: flex;
+    align-items: flex-start;
+    gap: 55px;
+
+}
+.project1images{
+    display:flex;
+    flex-direction:row;
+    gap: 15px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.project1images img:nth-child(1) {
+    width: 500px;
+    height:auto;
+    border-radius: 10px;
+}
+.project1images img:nth-child(2) {
+    width: 250px;
+    border-radius: 10px;
+}
+
+.project1 h3 {
+    font-size: 30px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+
+    font-family: "Sniglet", system-ui;
+    font-weight: 500;
+    font-style: normal;
+
+    color: rgb(64, 93, 64);
+
+}
+
+.project1text {
+    max-width: 600px; /* to prevent the text from stretching too wide */
+
+    font-size: 15px;
+    line-height: 1.5; /*spacing between the lines */
+    font-family: "Sniglet", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.case-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 16px;
+
+    background-color: rgb(127, 26, 81);
+    color: white;
+    text-decoration: none;
+
+    border-radius: 12px;
+    font-family: "Sniglet", system-ui;
+    font-size: 14px;
+
+    transition: 0.2s ease;
+}
+
+.case-btn:hover {
+    background-color: #c39ab0;
+}
+
+/* project 2 styling*/
+.project2row{
+    display: flex;
+    align-items: flex-start;
+    gap: 120px;
+
+}
+.project2images{
+    display:flex;
+    flex-direction:row;
+    gap: 15px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.project2images img {
+    width: 500px;
+    height:auto;
+    border-radius: 10px;
+}
+.project2 h3 {
+    font-size: 30px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+
+    font-family: "Sniglet", system-ui;
+    font-weight: 500;
+    font-style: normal;
+
+    color: rgb(64, 93, 64);
+
+}
+
+.project2text {
+    max-width: 600px; 
+
+    font-size: 15px;
+    line-height: 1.5; /*spacing between the lines */
+    font-family: "Sniglet", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* project 3 styling*/
+.project3row{
+    display: flex;
+    align-items: flex-start;
+    gap: 100px;
+
+}
+.project3images{
+    display:flex;
+    flex-direction:row;
+    gap: 15px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.project3images img:nth-child(1) {
+    width: 250px;
+    height:auto;
+    border-radius: 10px;
+}
+.project3images img:nth-child(2) {
+    width: 250px;
+    border-radius: 10px;
+}
+
+.project3 h3 {
+    font-size: 30px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+
+    font-family: "Sniglet", system-ui;
+    font-weight: 500;
+    font-style: normal;
+
+    color: rgb(64, 93, 64);
+
+}
+
+.project3text {
+    max-width: 600px; /* to prevent the text from stretching too wide */
+
+    font-size: 15px;
+    line-height: 1.5; /*spacing between the lines */
+    font-family: "Sniglet", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/* project 4 styling*/
+.project4row{
+    display: flex;
+    align-items: flex-start;
+    gap: 100px;
+
+}
+.project4images{
+    display:flex;
+    flex-wrap: wrap; /*allows images to go on to the next row to create a 2x2 layout*/
+    gap: 15px;
+    width: 520px; /*basically how much space to take up on one row*/
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.project4images img:nth-child(1) {
+    width: 250px;
+    height:auto;
+    border-radius: 10px;
+}
+.project4images img:nth-child(2) {
+    width: 250px;
+    border-radius: 10px;
+}
+
+.project4images img:nth-child(3) {
+    width: 250px;
+    height:auto;
+    border-radius: 10px;
+}
+.project4images img:nth-child(4) {
+    width: 250px;
+    border-radius: 10px;
+}
+
+.project4 h3 {
+    font-size: 30px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+
+    font-family: "Sniglet", system-ui;
+    font-weight: 500;
+    font-style: normal;
+
+    color: rgb(64, 93, 64);
+
+}
+
+.project4text {
+    max-width: 600px; /* to prevent the text from stretching too wide */
+
+    font-size: 15px;
+    line-height: 1.5; /*spacing between the lines */
+    font-family: "Sniglet", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/*styling for the crochet section gallery*/
+
+.crochet-projects{
+    background-color: rgb(237, 245, 232);
+    padding-top: 40px;
+}
+
+.crochet-projects h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    margin-top: 0;
+
+    font-family: 'Borel', cursive;
+    font-weight: 600;
+
+    color: rgb(127, 26, 81);
+}
+
+.crochetgallery{
+    display:flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    /*width: 800px; /*basically how much space to take up on one row*/
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+
+.crochetgallery img{
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+}
+
+/* resume page styling*/
+
+.title2{
+    background-color: #e4d4dc;
+    padding: 5px 0;
+    
+}
+
+.title2 h1 {
+    font-size: 70px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-family: 'Borel', cursive;
+    font-weight: 700;
+    font-style: normal;
+    color: rgb(127, 26, 81);
+    text-align: center;
+
+
+}
+
+.summary h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+
+    font-family: "Sniglet", system-ui;
+    font-weight: 500;
+    font-style: normal;
+
+    color: rgb(127, 26, 81);
+}
+
+.summary p{ 
+    font-size: 15px;
+    line-height: 1.5; /*spacing between the lines */
+    font-family: "Sniglet", system-ui;
+    font-weight: 400;
+    font-style: normal;
+
+    margin-bottom: 15px;
+    margin-left: 15px;
+
+}
+
+.education h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+
+    font-family: "Sniglet", system-ui;
+    font-weight: 500;
+    font-style: normal;
+
+    color: rgb(127, 26, 81);
+}
+
+.experience h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+
+    font-family: "Sniglet", system-ui;
+    font-weight: 500;
+    font-style: normal;
+
+    color: rgb(127, 26, 81);
+}
+
+.resumeskills h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+
+    font-family: "Sniglet", system-ui;
+    font-weight: 500;
+    font-style: normal;
+
+    color: rgb(127, 26, 81);
+}
+
+.resumepage{
+    padding: 15px 15px
+}
+
+/*use a group selector since these all have the same styling */
+.summary,
+.education,
+.experience,
+.resumeskills {
+    margin-bottom: 40px;
+}
+
+.education table,
+.experience table,
+.resumeskills table {
+    border-collapse: collapse; /*remove the double border between cells*/
+    margin-top: 10px; /*space between heading and table*/
+    width: 100%; /*makes the table stretch across the whole page width*/
+    margin-left: 15px; /*creates some space between the left edge where the table starts*/
+}
+
+
+.education td,
+.experience td,
+.resumeskills td {
+    border: 1px solid #b37f9a; /*adds a border to each column cell*/
+    padding: 14px; /*space inside the cells*/
+    text-align: left;
+    vertical-align: top; /*align the content to the top*/
+
+    font-family: "Sniglet", system-ui;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.education th,
+.experience th,
+.resumeskills th {
+    background-color: #f3dfe8;
+    color: rgb(127, 26, 81);
+
+    border: 1px solid #b37f9a;
+    padding: 14px;
+    text-align: left;
+    vertical-align: top;
+
+    font-family: "Sniglet", system-ui;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* contact page styling*/
+
+.title3{
+    background-color: rgb(220 241 209);
+    padding: 40px 0;
+    
+}
+
+.title3 h1 {
+    font-size: 70px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-family: 'Borel', cursive;
+    font-weight: 700;
+    font-style: normal;
+    color: rgb(64, 93, 64);
+    text-align: center;
+
+
+}
+
+.title3 .subtitle {
+    font-size: 20px;
+    margin-top: 0;
+    text-align: center;
+}
+
+.contactpage{
+    padding: 25px 20px;
+    background-color: rgb(239, 248, 235);
+}
+
+.contact{
+    display: flex;
+    flex-wrap: wrap; /* wrap to next row for 2x2 layout */
+    gap: 30px;
+    width: 100%;
+    align-items: flex-start; /* ensures all cards align from the top */
+}
+
+.contactform,
+.socials,
+.location,
+.media {
+    background-color: rgb(220 241 209);
+    padding: 25px;
+    border-radius: 25px;
+    width: 520px
+}
+
+.contact h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+    margin-top: 0;
+
+    font-family: 'Borel', cursive;
+    font-weight: 600;
+
+    color: rgb(64, 93, 64);
+}
+
+.contactform fieldset{
+    border: 2px solid #b37f9a;
+    border-radius: 12px;
+    padding: 25px;
+    width: 100%;
+    box-sizing: border-box; /*the padding and border are included in the calculation of the width and height:*/
+}
+
+.contactform legend {
+    font-family: "Sniglet", system-ui;
+    color: rgb(127, 26, 81);
+
+    font-size: 18px;
+    padding: 10px 8px;
+}
+
+.contactform label,
+.contactform input,
+.contactform textarea,
+.socials p,
+.socials a {
+    font-family: "Sniglet", system-ui;
+    font-size: 16px;
+}
+
+.contactform input[type="text"],
+.contactform input[type="email"],
+.contactform textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0 15px 0;
+    border: 1px solid #b37f9a;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.contactform input[type="submit"],
+.contactform input[type="reset"] {
+    padding: 10px 12px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgb(127, 26, 81);
+    color: white;
+    font-family: "Sniglet", system-ui;
+}
+
+
+.location iframe,
+.media iframe {
+    border-radius: 12px;
+    width: 100%;
+    height: 300px;
+}
+
+
+
+/* =========================
+   MakerDrop case study page
+   ========================= */
+
+.case-study {
+    background-color: #f8f1f5;
+    padding: 40px 70px 70px 70px;
+}
+
+.case-study section {
+    background-color: rgba(255, 255, 255, 0.45);
+    border-radius: 22px;
+    padding: 28px 30px;
+    margin-bottom: 32px;
+}
+
+.case-study h2 {
+    font-size: 34px;
+    margin-top: 0;
+    margin-bottom: 14px;
+    font-family: 'Borel', cursive;
+    font-weight: 600;
+    color: rgb(127, 26, 81);
+}
+
+.case-study p {
+    font-family: "Sniglet", system-ui;
+    font-size: 16px;
+    line-height: 1.75;
+    color: rgb(64, 93, 64);
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+.case-study strong {
+    color: rgb(127, 26, 81);
+}
+
+/* two-column layout for text + image */
+.case-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.case-text {
+    flex: 1 1 500px;
+    min-width: 280px;
+}
+
+.case-visual {
+    flex: 1 1 320px;
+    min-width: 260px;
+}
+
+.case-visual img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 16px;
+}
+
+/* standard single image */
+.case-img {
+    width: 100%;
+    max-width: 420px;
+    height: auto;
+    display: block;
+    border-radius: 16px;
+    margin-top: 10px;
+}
+
+/* slightly wider image option */
+.case-img-wide {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    display: block;
+    border-radius: 16px;
+    margin-top: 12px;
+}
+
+/* gallery grids */
+.case-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 18px;
+    margin-top: 12px;
+}
+
+.case-gallery img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    display: block;
+    border-radius: 16px;
+}
+
+/* for poster/comic where cropping would be bad */
+.case-gallery.contain img,
+.case-gallery-comic img {
+    height: auto;
+    object-fit: contain;
+    background-color: #fff;
+    padding: 8px;
+}
+
+/* role / insights / issues list styling */
+.case-list {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.case-list li {
+    margin-bottom: 10px;
+    font-family: "Sniglet", system-ui;
+    font-size: 16px;
+    line-height: 1.7;
+    color: rgb(64, 93, 64);
+}
+
+/* small highlight cards */
+.case-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+    margin-top: 12px;
+}
+
+.case-card {
+    background-color: #e4d4dc;
+    border-radius: 18px;
+    padding: 18px;
+}
+
+.case-card h3 {
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-family: "Sniglet", system-ui;
+    font-size: 20px;
+    color: rgb(127, 26, 81);
+    font-weight: 600;
+}
+
+.case-card p {
+    margin-bottom: 0;
+    font-size: 15px;
+}
+
+/* optional little tag row under header */
+.case-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.case-tag {
+    background-color: rgb(220 241 209);
+    color: rgb(64, 93, 64);
+    border-radius: 999px;
+    padding: 8px 14px;
+    font-family: "Sniglet", system-ui;
+    font-size: 14px;
+}
+
+/* buttons / links */
+.case-link,
+.case-back-btn {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 10px 16px;
+    background-color: rgb(127, 26, 81);
+    color: white;
+    text-decoration: none;
+    border-radius: 12px;
+    font-family: "Sniglet", system-ui;
+    font-size: 14px;
+    transition: 0.2s ease;
+}
+
+.case-link:hover,
+.case-back-btn:hover {
+    background-color: #c39ab0;
+}
+
