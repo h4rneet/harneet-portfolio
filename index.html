@@ -1,131 +1,690 @@
 <!DOCTYPE html>
-<html> 
-    <head> 
-        <title> Harneet - Home </title>
-        <link href="style.css" rel="stylesheet">
 
-        <!--Google Fonts-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+<html lang="en">
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Borel&display=swap" rel="stylesheet">
+<head>
+    <meta charset="UTF-8">
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Sniglet:wght@400;800&display=swap" rel="stylesheet">
-    </head>
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
-    <body> 
-        <!-- Putting the Navbar above the header because it should be at the very top of page -->
-        <nav> 
-            <!-- Top Navbar -->
-            <ul>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="index.html">Home</a></li>
-            </ul>
-        </nav>
+    <title>Harneet - Home</title>
 
 
-        <header class="welcome"> 
-            <!-- this div holds all the text for the welcome section -->
-                <div class="title">
-                    <p class="hello-text"> hello, i'm </p>
-                    <h1 class="name-text"> Harneet </h1>
-                    <p class='subtitle'> Aspiring designer  &nbsp;   ♥︎   &nbsp;  Student @ UTM </p> 
-                    <!-- &nbsp; adds a space between the text -->
+    <!-- Existing site styles -->
+    <link rel="stylesheet" href="style.css">
 
-                </div> 
-                <img src="assets/pixelicon.svg" alt="Pixel illustration of Harneet">
-        </header>
 
-    
-        <main> 
-            <section class="about">
+    <!-- Homepage redesign styles -->
+    <link rel="stylesheet" href="home.css">
 
-                <h2>about me </h2>
 
-                
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 
-                <!-- this div holds all the text for the about me section -->
-                <div class="about-row">
-                    <img src="assets/aboutme.svg" alt="Pixel illustration of Harneet">
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
 
-    
-                    <div class="about-text">
-            
-                        <p> Hi! I'm Harneet, a second-year student at the University of Toronto 
-                        studying Technology, Coding & Society. I'm drawn to the creative side 
-                        of technology, from UI/UX to game design to front-end web development.  </p>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Borel&family=Sniglet:wght@400;800&display=swap"
+        rel="stylesheet"
+    >
+</head>
 
-                        <p> I'm naturally curious and detail-oriented, always learning new skills by experimenting, 
-                        designing, and refining my ideas until they feel just right.  </p>
 
-                        <p>When I'm not busy aligning pixels on my screen, you'll probably find me wandering
-                        the yarn aisle of a craft store or trying to befriend every stray cat that I walk by. </p>
+<body>
 
-                    </div> 
+
+    <!-- ========================================
+         NAVIGATION
+         ======================================== -->
+
+    <nav class="navbar">
+
+    <ul class="nav-links">
+
+        <li>
+            <a href="index.html">
+                home
+            </a>
+        </li>
+
+        <li>
+            <a href="portfolio.html">
+                work
+            </a>
+        </li>
+
+        <li>
+            <a href="creative-corner.html">
+                for fun
+            </a>
+        </li>
+
+    </ul>
+
+</nav>
+
+
+    <!-- ========================================
+         HERO
+         ======================================== -->
+
+    <header
+        class="hero"
+        id="home"
+    >
+
+        <div class="hero-canvas">
+
+
+            <img
+                class="hero-illustration"
+                src="Assets/hero/herographic.PNG"
+                alt="Illustration of Harneet sitting at her desk"
+            >
+
+
+            <div class="hero-text">
+
+    <p class="hello-text">
+        hello, i'm
+    </p>
+
+    <img
+        class="name-art"
+        src="Assets/hero/nameart.PNG"
+        alt="Harneet"
+    >
+
+    <div class="hero-sparkles" aria-hidden="true">
+
+        <span class="sparkle sparkle-1">✦</span>
+        <span class="sparkle sparkle-2">✧</span>
+        <span class="sparkle sparkle-3">✦</span>
+        <span class="sparkle sparkle-4">✧</span>
+        <span class="sparkle sparkle-5">✦</span>
+        <span class="sparkle sparkle-6">✧</span>
+
+    </div>
+
+</div>
+
+
+        </div>
+
+    </header>
+
+
+
+    <main>
+
+
+        <!-- ========================================
+             ABOUT
+             ======================================== -->
+
+        <section
+            class="about-new"
+            id="about"
+        >
+
+
+            <h2 class="about-title">
+                a little about me.
+            </h2>
+
+
+
+            <div class="about-row-new">
+
+
+                <div class="about-camera">
+
+    <button
+        class="camera-button"
+        id="cameraButton"
+        type="button"
+        aria-label="Show another digicam photo"
+    >
+
+        <div
+            class="camera-stage"
+            id="cameraStage"
+        >
+
+            <img
+                src="Assets/cam1.png"
+                alt="Illustrated digital camera showing a digicam photo"
+                class="digicam"
+                id="cameraImage"
+            >
+
+            <span
+                class="camera-flash"
+                aria-hidden="true"
+            ></span>
+
+        </div>
+
+    </button>
+
+
+</div>
+
+
+                <div class="about-content">
+
+                    <p>
+                        Hi! I'm Harneet, a third-year student at the University of
+                        Toronto studying Technology, Coding &amp; Society. I'm drawn
+                        to the creative side of technology, from UI/UX to game design
+                        to front-end web development.
+                    </p>
+
+
+                    <p>
+                        I'm naturally curious and detail-oriented, always learning
+                        new skills by experimenting, designing, and refining my ideas
+                        until they feel just right.
+                    </p>
+
+
+                    <p>
+                        When I'm not busy aligning pixels on my screen, you'll
+                        probably find me wandering the yarn aisle of a craft store
+                        or trying to befriend every stray cat that I walk by.
+                    </p>
+
                 </div>
-            </section>
 
-            <section class="skills"> 
-                <h2> softwares & skills </h2> 
 
-                <div class='skills-row'>
-                <img src="assets/figmaicon.svg" alt="Figma icon">
-                <img src="assets/psicon.svg" alt="Adobe Photoshop icon">
-                <img src="assets/aiicon.svg" alt="Adobe Illustator icon">
-                <img src="assets/mayaicon.svg" alt="Autodesk Maya icon">
-                <img src="assets/unityicon.svg" alt="Unity icon">
-                <img src="assets/pythonicon.svg" alt="Python icon">
-                <img src="assets/htmlicon.svg" alt="HTML/CSS icon">
+            </div>
+
+
+        </section>
+
+
+
+        <!-- ========================================
+             SKILLS + TOOLS
+             ======================================== -->
+
+        <section
+            class="skills-new"
+            id="skills"
+        >
+
+
+            <h2 class="skills-title">
+                skills + tools.
+            </h2>
+
+
+
+            <div class="folder-row">
+
+
+                <!-- =================================
+                     WHAT I DO
+                     ================================= -->
+
+                <div class="folder-card">
+
+
+                    <img
+                        src="Assets/skills/folder-back.png"
+                        alt=""
+                        class="folder-back"
+                    >
+
+
+                    <div
+                        class="folder-paper"
+                        id="what-i-do-paper"
+                    >
+
+                        <ul class="skill-list">
+
+                            <li>UI/UX Design</li>
+
+                            <li>Graphic Design</li>
+
+                            <li>Product Design</li>
+
+                            <li>Front-End Web Development</li>
+
+                            <li>Immersive Environment Design</li>
+
+                            <li>Game Design</li>
+
+                        </ul>
+
+                    </div>
+
+
+
+                    <button
+                        class="folder-toggle"
+                        type="button"
+                        aria-expanded="false"
+                        aria-controls="what-i-do-paper"
+                    >
+
+                        <img
+                            src="Assets/skills/folder-front.png"
+                            alt=""
+                            class="folder-front"
+                        >
+
+                        <span class="folder-label">
+                            what I do
+                        </span>
+
+                    </button>
+
+
                 </div>
-                
-                <br> 
-
-                <p> UI/UX Design ✦ Design Thinking ✦ Front-end Web Development ✦ Immersive Environment Design ✦ GUI Programming ✦ Graphic Design ✦ Product Design </p>
-            </section>
 
 
-            <section class="next"> 
-                <h2> where to next? </h2>
 
-                <!-- Wrap these images in <a> tag to make them as clickable buttons -->
+                <!-- =================================
+                     TOOLS I USE
+                     ================================= -->
 
-                <div class='next-row'>
-                <a href="portfolio.html">
-                    <img src="assets/card1.svg" alt="Portfolio button">
+                <div class="folder-card">
+
+
+                    <img
+                        src="Assets/skills/folder-back.png"
+                        alt=""
+                        class="folder-back"
+                    >
+
+
+                    <div
+                        class="folder-paper"
+                        id="tools-paper"
+                    >
+
+                        <ul class="skill-list tools-list">
+
+                            <li>Figma</li>
+
+                            <li>Adobe CC</li>
+
+                            <li>HTML / CSS</li>
+
+                            <li>Autodesk Maya</li>
+
+                            <li>Unity</li>
+
+                             <li>Procreate</li>
+
+                            <li>Python</li>
+
+                            <li>Pygame</li>
+
+                            <li>Tkinter</li>
+
+                            <li>ArcGIS Pro</li>
+
+                            <li>R</li>
+
+                        </ul>
+
+                    </div>
+
+
+
+                    <button
+                        class="folder-toggle"
+                        type="button"
+                        aria-expanded="false"
+                        aria-controls="tools-paper"
+                    >
+
+                        <img
+                            src="Assets/skills/folder-front.png"
+                            alt=""
+                            class="folder-front"
+                        >
+
+                        <span class="folder-label">
+                            tools I use
+                        </span>
+
+                    </button>
+
+
+                </div>
+
+
+
+                <!-- =================================
+                     HOW I WORK
+                     ================================= -->
+
+                <div class="folder-card">
+
+
+                    <img
+                        src="Assets/skills/folder-back.png"
+                        alt=""
+                        class="folder-back"
+                    >
+
+
+                    <div
+                        class="folder-paper"
+                        id="how-i-work-paper"
+                    >
+
+                        <ul class="skill-list">
+
+                            <li>Design Thinking</li>
+
+                            <li>Visual Storytelling</li>
+
+                            <li>Iteration</li>
+
+                            <li>Moodboarding</li>
+
+                            <li>Prototyping</li>
+
+                            <li>User-Centered Design</li>
+
+                        </ul>
+
+                    </div>
+
+
+
+                    <button
+                        class="folder-toggle"
+                        type="button"
+                        aria-expanded="false"
+                        aria-controls="how-i-work-paper"
+                    >
+
+                        <img
+                            src="Assets/skills/folder-front.png"
+                            alt=""
+                            class="folder-front"
+                        >
+
+                        <span class="folder-label">
+                            how I work
+                        </span>
+
+                    </button>
+
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- ========================================
+             WORK
+             ======================================== -->
+
+        <section
+            class="work-new"
+            id="work"
+        >
+
+
+            <h2 class="work-title">
+                work.
+            </h2>
+
+
+
+            <div class="project-preview">
+
+
+                <!-- =================================
+                     PROJECT TEXT
+                     ================================= -->
+
+                <div class="project-info">
+
+
+                    <h3
+                        class="project-title"
+                        id="project-title"
+                    >
+                        Innovation Hub
+                    </h3>
+
+
+                    <p
+                        class="project-category"
+                        id="project-category"
+                    >
+                        Graphic Design · Visual Storytelling · Communications
+                    </p>
+
+
+                    <p
+                        class="project-description"
+                        id="project-description"
+                    >
+                        Select visual communication &amp; graphic design work
+                        created for the Innovation Hub as a Graphic Designer
+                        + Communications Assistant.
+                    </p>
+
+
+                </div>
+
+
+
+                <!-- =================================
+                     CAROUSEL NAVIGATION
+                     ================================= -->
+
+                <div class="project-navigation">
+
+
+                    <button
+                        class="carousel-arrow previous-project"
+                        type="button"
+                        aria-label="Previous project"
+                    >
+                        &#8249;
+                    </button>
+
+
+
+                    <div
+                        class="carousel-dots"
+                        aria-label="Choose a project"
+                    >
+
+
+                        <button
+                            class="dot active"
+                            type="button"
+                            aria-label="Show Innovation Hub"
+                        ></button>
+
+
+                        <button
+                            class="dot"
+                            type="button"
+                            aria-label="Show MakerDrop"
+                        ></button>
+
+
+                        <button
+                            class="dot"
+                            type="button"
+                            aria-label="Show Campus Calm"
+                        ></button>
+
+
+                    </div>
+
+
+
+                    <button
+                        class="carousel-arrow next-project"
+                        type="button"
+                        aria-label="Next project"
+                    >
+                        &#8250;
+                    </button>
+
+
+                </div>
+
+
+
+                <!-- =================================
+                     LAPTOP
+                     ================================= -->
+
+               <div class="laptop-wrapper">
+
+    <!-- Project preview -->
+    <a
+        class="project-screen-link"
+        id="project-screen-link"
+        href="portfolio.html"
+        aria-label="View project"
+    >
+
+        <img
+            class="project-screen-image"
+            id="project-screen-image"
+            src=""
+            alt=""
+        >
+
+        <div
+            class="project-screen-placeholder"
+            id="project-screen-placeholder"
+        >
+            Project preview
+        </div>
+
+        <span class="view-project-screen-btn">
+            view project ↗
+        </span>
+
+    </a>
+
+
+    <!-- Laptop illustration -->
+    <img
+        src="Assets/projects/laptop.PNG"
+        alt="Illustrated laptop"
+        class="laptop"
+    >
+
+</div>
+
+                <!-- =================================
+                     VIEW ALL PROJECTS
+                     ================================= -->
+
+                <a
+                    href="portfolio.html"
+                    class="view-projects-btn"
+                >
+                    view all projects
                 </a>
 
-                <a href="resume.html">
-                    <img src="assets/card2.svg" alt="Resume button">
-                </a>
+
+            </div>
 
 
-                <a href="contact.html">
-                    <img src="assets/card4.svg" alt="Contact button">
-                </a>
-                
-                </div>
-
-            </section>
+        </section>
 
 
-        </main>
-
-        <aside> 
-        </aside>
-
-        <footer>
-            <p> © 2026 Harneet B </p>
-        </footer>
+    </main>
 
 
-    </body>
 
+    <!-- ========================================
+         FOOTER
+         ======================================== -->
+<footer class="site-footer">
+
+    <div class="footer-socials">
+
+        <!-- EMAIL -->
+        <a
+            href="mailto:harneettb@gmail.com"
+            class="social-button"
+            aria-label="Send me an email"
+        >
+            <svg
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+            >
+                <path
+                    d="M3 5.5h18v13H3z"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linejoin="round"
+                />
+
+                <path
+                    d="M4 7l8 6 8-6"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                />
+            </svg>
+        </a>
+
+
+        <!-- LINKEDIN -->
+        <a
+            href="https://www.linkedin.com/in/harneetb/"
+            class="social-button"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Visit my LinkedIn"
+        >
+            <span class="linkedin-icon">
+                in
+            </span>
+        </a>
+
+    </div>
+
+
+    <p class="footer-note">
+        this website was brought to you by a lot of chai and an unhealthy amount of screentime ♡.
+    </p>
+
+
+    <p class="footer-copyright">
+        © Harneet B 2026
+    </p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
 
 </html>

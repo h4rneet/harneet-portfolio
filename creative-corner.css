@@ -1,0 +1,462 @@
+/* ========================================
+   FOR FUN PAGE
+   ======================================== */
+
+
+/* ========================================
+   COLOURS
+   ======================================== */
+
+:root {
+    --pink: #efcbe3;
+    --light-pink: #fff8fb;
+    --cream: #f1dfcf;
+
+    --brown: #3c291f;
+    --purple: #743b5b;
+
+    --sage: #dce8d2;
+}
+
+
+
+/* ========================================
+   GLOBAL
+   ======================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+
+    background-color: var(--light-pink);
+
+    color: var(--brown);
+}
+
+
+
+/* ========================================
+   NAVIGATION
+   ======================================== */
+
+.navbar {
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+
+    width: 100%;
+
+    padding:
+        18px
+        55px;
+
+    background-color: var(--pink);
+}
+
+
+.navbar .nav-links {
+    display: flex;
+
+    justify-content: flex-end;
+    align-items: center;
+
+    gap: 55px;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+
+    background: transparent;
+}
+
+
+.navbar .nav-links li {
+    float: none;
+}
+
+
+.navbar .nav-links a {
+    padding: 0;
+
+    font-family: "Sniglet", sans-serif;
+
+    font-size: 22px;
+    font-weight: 400;
+
+    color: var(--brown);
+
+    text-decoration: none;
+}
+
+
+.navbar .nav-links a:hover {
+    background: transparent;
+
+    opacity: 0.6;
+}
+
+
+
+/* ========================================
+   HERO
+   ======================================== */
+
+.fun-hero {
+    width: min(
+        950px,
+        90%
+    );
+
+    margin: 0 auto;
+
+    padding:
+        110px
+        20px
+        105px;
+
+    text-align: center;
+}
+
+
+.fun-hero h1 {
+    margin:
+        0
+        0
+        20px;
+
+    font-family: "Sniglet", sans-serif;
+
+    font-size: clamp(
+        56px,
+        7vw,
+        50px
+    );
+
+    font-weight: 400;
+}
+
+
+.fun-hero p {
+    max-width: 820px;
+
+    margin: 0 auto;
+
+    font-family: "Sniglet", sans-serif;
+
+    font-size: 18px;
+
+    line-height: 1.6;
+
+    color: var(--purple);
+}
+
+
+
+/* ========================================
+   CREATIVE SECTIONS
+   ======================================== */
+
+.creative-section {
+    padding:
+        95px
+        5vw
+        120px;
+}
+
+
+
+/* ========================================
+   CROCHET
+   ======================================== */
+
+.crochet-section {
+    background-color: var(--pink);
+}
+
+
+
+/* ========================================
+   LITTLE MOMENTS
+   ======================================== */
+
+.moments-section {
+    background-color: var(--cream);
+}
+
+
+
+/* ========================================
+   SECTION HEADING
+   ======================================== */
+
+.section-heading {
+    width: min(
+        1350px,
+        100%
+    );
+
+    margin:
+        0
+        auto
+        52px;
+}
+
+
+.section-heading h2 {
+    margin: 0;
+
+    font-family: "Sniglet", sans-serif;
+
+    font-size: clamp(
+        40px,
+        5vw,
+        50px
+    );
+
+    font-weight: 400;
+}
+
+
+
+/* ========================================
+   MASONRY GALLERY
+   ======================================== */
+
+.masonry-gallery {
+    width: min(
+        1350px,
+        100%
+    );
+
+    margin: 0 auto;
+
+    column-count: 4;
+
+    column-gap: 22px;
+}
+
+
+
+/* ========================================
+   GALLERY ITEM
+   ======================================== */
+
+.gallery-item {
+    display: inline-block;
+
+    width: 100%;
+
+    margin:
+        0
+        0
+        22px;
+
+    break-inside: avoid;
+
+    vertical-align: top;
+}
+
+
+
+/* ========================================
+   IMAGES
+   ======================================== */
+
+.gallery-item img {
+    display: block;
+
+    width: 100%;
+
+    height: auto;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0
+        7px
+        20px
+        rgba(60, 41, 31, 0.07);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+
+
+/* ========================================
+   IMAGE HOVER
+   ======================================== */
+
+.gallery-item img:hover {
+    transform:
+        translateY(-4px);
+
+    box-shadow:
+        0
+        13px
+        28px
+        rgba(60, 41, 31, 0.13);
+}
+
+
+
+
+
+/* ========================================
+   LARGE TABLET
+   ======================================== */
+
+@media (max-width: 1100px) {
+
+    .masonry-gallery {
+        column-count: 3;
+    }
+
+}
+
+
+
+/* ========================================
+   TABLET
+   ======================================== */
+
+@media (max-width: 850px) {
+
+    .navbar {
+        padding:
+            16px
+            25px;
+    }
+
+
+    .navbar .nav-links {
+        justify-content: center;
+
+        gap: 30px;
+    }
+
+
+    .fun-hero {
+        padding:
+            85px
+            20px
+            80px;
+    }
+
+
+    .creative-section {
+        padding:
+            75px
+            5vw
+            90px;
+    }
+
+
+    .masonry-gallery {
+        column-count: 2;
+
+        column-gap: 18px;
+    }
+
+
+    .gallery-item {
+        margin-bottom: 18px;
+    }
+
+}
+
+
+
+/* ========================================
+   MOBILE
+   ======================================== */
+
+@media (max-width: 600px) {
+
+    .navbar {
+        padding:
+            15px
+            12px;
+    }
+
+
+    .navbar .nav-links {
+        gap: 20px;
+    }
+
+
+    .navbar .nav-links a {
+        font-size: 16px;
+    }
+
+
+    .fun-hero {
+        width: 92%;
+
+        padding:
+            70px
+            12px
+            65px;
+    }
+
+
+    .fun-hero p {
+        font-size: 16px;
+    }
+
+
+    .creative-section {
+        padding:
+            65px
+            22px
+            75px;
+    }
+
+
+    .section-heading {
+        margin-bottom: 35px;
+    }
+
+
+    .masonry-gallery {
+        column-count: 1;
+
+        column-gap: 0;
+
+        width: min(
+            430px,
+            100%
+        );
+    }
+
+
+    .gallery-item {
+        margin-bottom: 20px;
+    }
+
+}
+
+
+
+/* ========================================
+   REDUCED MOTION
+   ======================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        transition: none !important;
+        animation: none !important;
+    }
+
+}

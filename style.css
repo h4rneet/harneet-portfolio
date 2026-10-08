@@ -207,20 +207,127 @@ nav ul li a:hover { /* hover pseudoclass */
     border: 3px solid rgb(127, 26, 81) /* rounded border effect when the mouse hovers */
 }
 
-/* footer */
-footer{
-    padding: 10px;
-    height: 40px;
-    background-color: #c39ab0;
+/* ========================================
+   FOOTER
+   ======================================== */
 
-    font-family: "Sniglet", system-ui;
-    font-weight: 400;
-    font-style: normal;
-    color:  rgb(127, 26, 81);
+/* ========================================
+   FOOTER
+   ======================================== */
 
-    text-align: right;
+.site-footer {
+    padding:
+        55px
+        30px
+        28px;
+
+    background-color: var(--pink);
+
+    text-align: center;
+
+    font-family: "Sniglet", sans-serif;
+
+    color: var(--brown);
 }
 
+
+/* ========================================
+   SOCIAL ICONS
+   ======================================== */
+
+.footer-socials {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 16px;
+
+    margin-bottom: 24px;
+}
+
+
+.social-button {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 58px;
+    height: 58px;
+
+    border:
+        2px
+        solid
+        var(--brown);
+
+    border-radius: 50%;
+
+    background-color: var(--light-pink);
+
+    color: var(--brown);
+
+    text-decoration: none;
+
+    transition:
+        transform 0.2s ease,
+        background-color 0.2s ease;
+}
+
+
+.social-button:hover {
+    transform:
+        translateY(-4px)
+        rotate(-3deg);
+
+    background-color: var(--cream);
+}
+
+
+.social-button svg {
+    width: 26px;
+    height: 26px;
+}
+
+
+.linkedin-icon {
+    font-family: Arial, sans-serif;
+
+    font-size: 25px;
+
+    font-weight: 700;
+
+    line-height: 1;
+}
+
+
+/* ========================================
+   FOOTER MESSAGE
+   ======================================== */
+
+.footer-note {
+    margin:
+        0
+        auto
+        18px;
+
+    font-size: 17px;
+
+    line-height: 1.5;
+}
+
+
+/* ========================================
+   COPYRIGHT
+   ======================================== */
+
+.footer-copyright {
+    margin: 0;
+
+    font-size: 12px;
+
+    opacity: 0.6;
+}
 
 /* portfolio page styling*/
 

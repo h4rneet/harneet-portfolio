@@ -1,0 +1,700 @@
+/* ========================================
+   CAMPUS CALM PROJECT PAGE
+   ======================================== */
+
+
+/* ========================================
+   COLOURS
+   ======================================== */
+
+:root {
+    --pink: #efcbe3;
+    --light-pink: #fff8fb;
+    --chip-pink: #f8dfea;
+    --cream: #f1dfcf;
+
+    --brown: #3c291f;
+    --purple: #743b5b;
+
+    --overview-pink: #faedf3;
+}
+
+
+
+/* ========================================
+   GLOBAL
+   ======================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+
+    background-color: var(--light-pink);
+
+    color: var(--brown);
+}
+
+
+
+/* ========================================
+   NAVBAR
+   ======================================== */
+
+.navbar {
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+
+    width: 100%;
+
+    padding: 18px 55px;
+
+    background-color: var(--pink);
+}
+
+
+.navbar .nav-links {
+    display: flex;
+
+    justify-content: flex-end;
+    align-items: center;
+
+    gap: 55px;
+
+    width: 100%;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+
+    background-color: transparent;
+
+    overflow: visible;
+}
+
+
+.navbar .nav-links li {
+    float: none;
+
+    margin: 0;
+    padding: 0;
+}
+
+
+.navbar .nav-links a {
+    display: inline-block;
+
+    margin: 0;
+    padding: 0;
+
+    font-family: "Sniglet", sans-serif;
+
+    font-size: 22px;
+    font-weight: 400;
+
+    color: var(--brown);
+
+    text-decoration: none;
+
+    transition:
+        opacity 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.navbar .nav-links a:hover {
+    background-color: transparent;
+
+    opacity: 0.6;
+
+    transform: translateY(-2px);
+}
+
+
+
+/* ========================================
+   PROJECT HERO
+   ======================================== */
+
+.campus-page .project-hero {
+    width: min(
+        1050px,
+        88%
+    );
+
+    margin: 0 auto;
+
+    padding:
+        75px
+        0
+        90px;
+}
+
+
+
+/* ========================================
+   BACK LINK
+   ======================================== */
+
+.back-link {
+    display: inline-block;
+
+    margin-bottom: 50px;
+
+    font-family: "Sniglet", sans-serif;
+
+    font-size: 16px;
+
+    color: var(--purple);
+
+    text-decoration: none;
+
+    transition:
+        transform 0.2s ease,
+        opacity 0.2s ease;
+}
+
+
+.back-link:hover {
+    transform: translateX(-4px);
+
+    opacity: 0.7;
+}
+
+
+
+/* ========================================
+   PROJECT TITLE
+   ======================================== */
+
+.campus-page .project-hero h1 {
+    margin:
+        0
+        0
+        24px;
+
+    font-family: "Sniglet", sans-serif;
+
+    font-size: clamp(
+        50px,
+        6vw,
+        82px
+    );
+
+    font-weight: 400;
+
+    line-height: 1.05;
+
+    color: var(--brown);
+}
+
+
+
+/* ========================================
+   SKILL TAGS
+   ======================================== */
+
+.skill-tags {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+    margin-bottom: 45px;
+}
+
+
+.skill-tags span {
+    padding:
+        8px
+        16px;
+
+    border:
+        1.5px
+        solid
+        var(--brown);
+
+    border-radius: 999px;
+
+    background-color: var(--chip-pink);
+
+    font-family: "Sniglet", sans-serif;
+
+    font-size: 14px;
+
+    color: var(--brown);
+}
+
+
+
+/* ========================================
+   SUMMARY CARD
+   ======================================== */
+
+.project-summary-card {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap:
+        38px
+        70px;
+
+    margin-bottom: 55px;
+
+    padding:
+        38px
+        42px;
+
+    background-color: white;
+
+    border:
+        2px
+        solid
+        rgba(60, 41, 31, 0.1);
+
+    border-radius: 28px;
+
+    box-shadow:
+        0
+        12px
+        30px
+        rgba(60, 41, 31, 0.05);
+}
+
+
+.summary-item {
+    min-width: 0;
+}
+
+
+.summary-label {
+    margin:
+        0
+        0
+        8px;
+
+    font-family: "Sniglet", sans-serif;
+
+    font-size: 13px;
+
+    letter-spacing: 1.5px;
+
+    color: var(--purple);
+}
+
+
+.summary-value {
+    margin: 0;
+
+    font-family: "Sniglet", sans-serif;
+
+    font-size: 18px;
+
+    line-height: 1.45;
+
+    color: var(--brown);
+}
+
+
+
+/* ========================================
+   HERO VISUAL
+   ======================================== */
+
+.hero-visual {
+    overflow: hidden;
+
+    width: 100%;
+
+    padding: 18px;
+
+    background-color: white;
+
+    border:
+        2px
+        solid
+        rgba(60, 41, 31, 0.08);
+
+    border-radius: 28px;
+
+    box-shadow:
+        0
+        10px
+        25px
+        rgba(60, 41, 31, 0.04);
+}
+
+
+.hero-visual img {
+    display: block;
+
+    width: 100%;
+
+    height: auto;
+
+    border-radius: 18px;
+}
+
+
+
+/* ========================================
+   PROJECT OVERVIEW
+   ======================================== */
+
+.project-overview {
+    width: 100%;
+
+    padding:
+        85px
+        6vw;
+
+    background-color: var(--overview-pink);
+}
+
+
+.overview-inner {
+    width: min(
+        900px,
+        100%
+    );
+
+    margin: 0 auto;
+}
+
+
+
+/* ========================================
+   OVERVIEW HEADING
+   ======================================== */
+
+.project-overview h2 {
+    margin:
+        0
+        0
+        18px;
+
+    font-family: "Sniglet", sans-serif;
+
+    font-size: clamp(
+        36px,
+        4vw,
+        52px
+    );
+
+    font-weight: 400;
+
+    color: var(--brown);
+}
+
+
+
+/* ========================================
+   OVERVIEW TEXT
+   ======================================== */
+
+.project-overview p {
+    max-width: 800px;
+
+    margin:
+        0
+        0
+        30px;
+
+    font-family: "Sniglet", sans-serif;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+
+    color: var(--brown);
+}
+
+
+
+/* ========================================
+   WEBSITE BUTTON
+   ======================================== */
+
+.website-button {
+    display: inline-block;
+
+    padding:
+        12px
+        22px;
+
+    border:
+        2px
+        solid
+        var(--brown);
+
+    border-radius: 999px;
+
+    background-color: var(--chip-pink);
+
+    font-family: "Sniglet", sans-serif;
+
+    font-size: 16px;
+
+    color: var(--brown);
+
+    text-decoration: none;
+
+    transition:
+        transform 0.2s ease,
+        background-color 0.2s ease;
+}
+
+
+.website-button:hover {
+    background-color: var(--pink);
+
+    transform: translateY(-2px);
+}
+
+
+
+/* ========================================
+   BOTTOM NAVIGATION
+   ======================================== */
+
+.project-footer-nav {
+    padding:
+        75px
+        30px;
+
+    text-align: center;
+
+    background-color: var(--pink);
+}
+
+
+.back-to-work-button {
+    display: inline-block;
+
+    padding:
+        12px
+        24px;
+
+    border:
+        2px
+        solid
+        var(--brown);
+
+    border-radius: 999px;
+
+    background-color: var(--light-pink);
+
+    font-family: "Sniglet", sans-serif;
+
+    font-size: 16px;
+
+    color: var(--brown);
+
+    text-decoration: none;
+
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.back-to-work-button:hover {
+    background-color: white;
+
+    transform: translateY(-2px);
+}
+
+
+
+/* ========================================
+   FOOTER
+   ======================================== */
+
+
+/* ========================================
+   TABLET
+   ======================================== */
+
+@media (max-width: 900px) {
+
+    .navbar {
+        padding:
+            16px
+            25px;
+    }
+
+
+    .navbar .nav-links {
+        justify-content: center;
+
+        gap: 30px;
+    }
+
+
+    .campus-page .project-hero {
+        width: 90%;
+
+        padding-top: 60px;
+    }
+
+
+    .project-summary-card {
+        gap:
+            30px
+            40px;
+    }
+
+
+    .project-overview {
+        padding:
+            75px
+            6vw;
+    }
+
+}
+
+
+
+/* ========================================
+   MOBILE
+   ======================================== */
+
+@media (max-width: 600px) {
+
+    .navbar {
+        padding:
+            15px
+            12px;
+    }
+
+
+    .navbar .nav-links {
+        gap: 20px;
+    }
+
+
+    .navbar .nav-links a {
+        font-size: 16px;
+    }
+
+
+    .campus-page .project-hero {
+        width: 90%;
+
+        padding:
+            45px
+            0
+            65px;
+    }
+
+
+    .back-link {
+        margin-bottom: 35px;
+    }
+
+
+    .campus-page .project-hero h1 {
+        margin-bottom: 20px;
+
+        font-size: 46px;
+    }
+
+
+    .skill-tags {
+        gap: 8px;
+
+        margin-bottom: 35px;
+    }
+
+
+    .skill-tags span {
+        padding:
+            7px
+            13px;
+
+        font-size: 12px;
+    }
+
+
+    .project-summary-card {
+        grid-template-columns: 1fr;
+
+        gap: 28px;
+
+        padding:
+            28px
+            24px;
+
+        border-radius: 22px;
+    }
+
+
+    .summary-value {
+        font-size: 16px;
+    }
+
+
+    .hero-visual {
+        padding: 10px;
+
+        border-radius: 20px;
+    }
+
+
+    .hero-visual img {
+        border-radius: 13px;
+    }
+
+
+    .project-overview {
+        padding:
+            65px
+            6%;
+    }
+
+
+    .project-overview h2 {
+        margin-bottom: 15px;
+    }
+
+
+    .project-overview p {
+        font-size: 16px;
+
+        line-height: 1.65;
+    }
+
+
+    .website-button {
+        font-size: 14px;
+    }
+
+}
+
+
+
+/* ========================================
+   REDUCED MOTION
+   ======================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        transition: none !important;
+
+        animation: none !important;
+    }
+
+}

@@ -1,0 +1,1266 @@
+/* ========================================
+   MAKERDROP CASE STUDY
+   ======================================== */
+
+
+/* ========================================
+   COLOURS
+   ======================================== */
+
+:root {
+    --pink: #efcbe3;
+    --light-pink: #fff8fb;
+    --chip-pink: #f8dfea;
+    --cream: #f1dfcf;
+
+    --brown: #3c291f;
+    --purple: #743b5b;
+
+    --card: #ffffff;
+
+    /* Subtle section colour */
+    --overview-pink: #faedf3;
+
+    /* Methodology pastels */
+    --pastel-pink: #f8dfea;
+    --pastel-lavender: #eadff2;
+    --pastel-peach: #f5e5d7;
+    --pastel-sage: #e5eddc;
+    --pastel-rose: #f6e1e5;
+}
+
+
+
+/* ========================================
+   GLOBAL
+   ======================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+
+    background-color: var(--light-pink);
+
+    color: var(--brown);
+}
+
+
+
+/* ========================================
+   NAVBAR
+   ======================================== */
+
+.navbar {
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+
+    width: 100%;
+
+    padding: 18px 55px;
+
+    background-color: var(--pink);
+}
+
+
+.navbar .nav-links {
+    display: flex;
+
+    justify-content: flex-end;
+    align-items: center;
+
+    gap: 55px;
+
+    width: 100%;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+
+    background-color: transparent;
+
+    overflow: visible;
+}
+
+
+.navbar .nav-links li {
+    float: none;
+
+    margin: 0;
+    padding: 0;
+}
+
+
+.navbar .nav-links a {
+    display: inline-block;
+
+    margin: 0;
+    padding: 0;
+
+    font-family: "Sniglet", sans-serif;
+
+    font-size: 22px;
+    font-weight: 400;
+
+    color: var(--brown);
+
+    text-decoration: none;
+
+    transition:
+        opacity 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.navbar .nav-links a:hover {
+    background-color: transparent;
+
+    opacity: 0.6;
+
+    transform: translateY(-2px);
+}
+
+
+
+/* ========================================
+   PROJECT HERO
+   ======================================== */
+
+.maker-page .project-hero {
+    width: min(
+        1050px,
+        88%
+    );
+
+    margin: 0 auto;
+
+    padding:
+        75px
+        0
+        90px;
+}
+
+
+
+/* ========================================
+   BACK LINK
+   ======================================== */
+
+.back-link {
+    display: inline-block;
+
+    margin-bottom: 50px;
+
+    font-family: "Sniglet", sans-serif;
+
+    font-size: 16px;
+
+    color: var(--purple);
+
+    text-decoration: none;
+
+    transition:
+        transform 0.2s ease,
+        opacity 0.2s ease;
+}
+
+
+.back-link:hover {
+    transform: translateX(-4px);
+
+    opacity: 0.7;
+}
+
+
+
+/* ========================================
+   TITLE
+   ======================================== */
+
+.maker-page .project-hero h1 {
+    margin:
+        0
+        0
+        10px;
+
+    font-family: "Sniglet", sans-serif;
+
+    font-size: clamp(
+        50px,
+        6vw,
+        82px
+    );
+
+    font-weight: 400;
+
+    line-height: 1.05;
+
+    color: var(--brown);
+}
+
+
+.project-subtitle {
+    margin:
+        0
+        0
+        25px;
+
+    font-family: "Sniglet", sans-serif;
+
+    font-size: clamp(
+        18px,
+        2vw,
+        23px
+    );
+
+    color: var(--purple);
+}
+
+
+
+/* ========================================
+   SKILL TAGS
+   ======================================== */
+
+.skill-tags {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+    margin-bottom: 45px;
+}
+
+
+.skill-tags span {
+    padding:
+        8px
+        16px;
+
+    border:
+        1.5px
+        solid
+        var(--brown);
+
+    border-radius: 999px;
+
+    background-color: var(--chip-pink);
+
+    font-family: "Sniglet", sans-serif;
+
+    font-size: 14px;
+
+    color: var(--brown);
+}
+
+
+
+/* ========================================
+   SUMMARY CARD
+   ======================================== */
+
+.project-summary-card {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap:
+        38px
+        70px;
+
+    margin-bottom: 55px;
+
+    padding:
+        38px
+        42px;
+
+    background-color: white;
+
+    border:
+        2px
+        solid
+        rgba(60, 41, 31, 0.1);
+
+    border-radius: 28px;
+
+    box-shadow:
+        0
+        12px
+        30px
+        rgba(60, 41, 31, 0.05);
+}
+
+
+.summary-item {
+    min-width: 0;
+}
+
+
+.summary-label {
+    margin:
+        0
+        0
+        8px;
+
+    font-family: "Sniglet", sans-serif;
+
+    font-size: 13px;
+
+    letter-spacing: 1.5px;
+
+    color: var(--purple);
+}
+
+
+.summary-value {
+    margin: 0;
+
+    font-family: "Sniglet", sans-serif;
+
+    font-size: 18px;
+
+    line-height: 1.45;
+
+    color: var(--brown);
+}
+
+
+
+/* ========================================
+   HERO IMAGE GALLERY
+   ======================================== */
+
+.hero-gallery {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    align-items: stretch;
+
+    gap: 24px;
+
+    width: 100%;
+}
+
+
+.hero-image {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    min-width: 0;
+
+    padding: 18px;
+
+    background-color: white;
+
+    border:
+        2px
+        solid
+        rgba(60, 41, 31, 0.08);
+
+    border-radius: 26px;
+
+    box-shadow:
+        0
+        10px
+        25px
+        rgba(60, 41, 31, 0.04);
+}
+
+
+.hero-image img {
+    display: block;
+
+    width: 100%;
+    height: 520px;
+
+    object-fit: contain;
+
+    border-radius: 16px;
+}
+
+
+
+/* ========================================
+   CASE STUDY SECTIONS
+   ======================================== */
+
+.case-section {
+    width: min(
+        1050px,
+        88%
+    );
+
+    margin:
+        0
+        auto;
+
+    padding:
+        85px
+        0;
+}
+
+
+
+/* ========================================
+   PROJECT OVERVIEW
+   ======================================== */
+
+/*
+    Slightly different from both the hero
+    background and the cream sections.
+*/
+
+.case-section.overview-section {
+    width: 100%;
+
+    padding:
+        70px
+        max(
+            6vw,
+            calc((100vw - 1050px) / 2)
+        );
+
+    background-color: var(--overview-pink);
+}
+
+
+
+/* ========================================
+   SOFT / CREAM SECTIONS
+   ======================================== */
+
+.case-section.soft-section {
+    width: 100%;
+
+    padding:
+        85px
+        max(
+            6vw,
+            calc((100vw - 1050px) / 2)
+        );
+
+    background-color: var(--cream);
+}
+
+
+
+/* ========================================
+   SECTION HEADINGS
+   ======================================== */
+
+.case-section h2 {
+    margin:
+        0
+        0
+        28px;
+
+    font-family: "Sniglet", sans-serif;
+
+    font-size: clamp(
+        34px,
+        4vw,
+        50px
+    );
+
+    font-weight: 400;
+
+    color: var(--brown);
+}
+
+
+.case-section h3 {
+    margin:
+        0
+        0
+        10px;
+
+    font-family: "Sniglet", sans-serif;
+
+    font-size: 20px;
+
+    font-weight: 400;
+
+    color: var(--purple);
+}
+
+
+
+/* ========================================
+   COMPACT HEADING SECTIONS
+
+   Problem
+   Prototype
+   User Testing
+   ======================================== */
+
+.compact-heading h2 {
+    margin-bottom: 10px;
+}
+
+
+
+/* ========================================
+   PARAGRAPHS
+   ======================================== */
+
+.case-section > p,
+.case-text p {
+    margin:
+        0
+        0
+        22px;
+
+    font-family: "Sniglet", sans-serif;
+
+    font-size: 17px;
+
+    line-height: 1.68;
+
+    color: var(--brown);
+}
+
+
+.case-section > p:last-child,
+.case-text p:last-child {
+    margin-bottom: 0;
+}
+
+
+
+/* ========================================
+   TWO-COLUMN SECTIONS
+   ======================================== */
+
+.case-row {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1fr)
+        minmax(0, 1fr);
+
+    align-items: center;
+
+    gap: 55px;
+}
+
+/* ========================================
+   FIX HEADING / TEXT SPACING
+   ======================================== */
+
+.problem-section .case-row,
+.user-testing-section .case-row {
+    align-items: start;
+}
+
+
+.problem-section h2,
+.user-testing-section h2 {
+    margin-bottom: 12px;
+}
+
+
+.problem-section .case-text,
+.user-testing-section .case-text {
+    padding-top: 0;
+}
+
+.case-text {
+    min-width: 0;
+}
+
+
+.case-visual {
+    min-width: 0;
+}
+
+
+.case-visual > img {
+    display: block;
+
+    width: 100%;
+
+    height: auto;
+
+    border-radius: 24px;
+}
+
+
+
+/* ========================================
+   PROTOTYPE LAYOUT
+   ======================================== */
+
+/*
+    Give the image side more room so the
+    prototype photos are larger.
+*/
+
+.prototype-section .case-row {
+    grid-template-columns:
+        minmax(0, 0.75fr)
+        minmax(0, 1.25fr);
+
+    align-items: start;
+
+    gap: 38px;
+}
+
+
+.prototype-section .case-gallery {
+    margin:
+        0
+        0;
+}
+
+
+.prototype-section .case-gallery.contain {
+    gap: 14px;
+}
+
+
+
+/* ========================================
+   LISTS
+   ======================================== */
+
+.case-list {
+    margin:
+        20px
+        0
+        0;
+
+    padding-left: 24px;
+
+    font-family: "Sniglet", sans-serif;
+
+    font-size: 17px;
+
+    line-height: 1.65;
+
+    color: var(--brown);
+}
+
+
+.case-list li {
+    margin-bottom: 9px;
+}
+
+
+.case-list li:last-child {
+    margin-bottom: 0;
+}
+
+
+
+/* ========================================
+   KEY ISSUES
+   ======================================== */
+
+.key-issues-label {
+    display: inline-block;
+
+    margin:
+        8px
+        0
+        4px;
+
+    padding:
+        8px
+        14px;
+
+    border-radius: 12px;
+
+    background-color: var(--chip-pink);
+
+    font-family: "Sniglet", sans-serif;
+
+    font-size: 16px;
+
+    font-weight: 400;
+
+    color: var(--brown);
+}
+
+
+.key-issues-list {
+    margin-top: 12px;
+}
+
+
+
+/* ========================================
+   CARDS
+   ======================================== */
+
+.case-cards {
+    display: grid;
+
+    gap: 18px;
+
+    margin:
+        30px
+        0;
+}
+
+
+.methodology-cards {
+    grid-template-columns:
+        repeat(5, 1fr);
+}
+
+
+.insight-cards {
+    grid-template-columns:
+        repeat(2, 1fr);
+}
+
+
+.case-card {
+    padding:
+        24px
+        22px;
+
+    background-color: white;
+
+    border:
+        1.5px
+        solid
+        rgba(60, 41, 31, 0.1);
+
+    border-radius: 22px;
+
+    box-shadow:
+        0
+        8px
+        22px
+        rgba(60, 41, 31, 0.04);
+}
+
+
+.case-card p {
+    margin: 0;
+
+    font-family: "Sniglet", sans-serif;
+
+    font-size: 15px;
+
+    line-height: 1.55;
+
+    color: var(--brown);
+}
+
+
+
+/* ========================================
+   METHODOLOGY PASTELS
+   ======================================== */
+
+.methodology-cards .case-card:nth-child(1) {
+    background-color: var(--pastel-pink);
+}
+
+
+.methodology-cards .case-card:nth-child(2) {
+    background-color: var(--pastel-lavender);
+}
+
+
+.methodology-cards .case-card:nth-child(3) {
+    background-color: var(--pastel-peach);
+}
+
+
+.methodology-cards .case-card:nth-child(4) {
+    background-color: var(--pastel-sage);
+}
+
+
+.methodology-cards .case-card:nth-child(5) {
+    background-color: var(--pastel-rose);
+}
+
+
+
+/* ========================================
+   IMAGE GALLERIES
+   ======================================== */
+
+.case-gallery {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 18px;
+
+    margin:
+        35px
+        0;
+}
+
+
+.case-gallery img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    min-height: 0;
+
+    object-fit: cover;
+
+    border-radius: 20px;
+
+    background-color: white;
+}
+
+
+
+/* ========================================
+   CONTAIN GALLERY
+   ======================================== */
+
+.case-gallery.contain {
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    align-items: start;
+}
+
+
+.case-gallery.contain img {
+    height: auto;
+
+    object-fit: contain;
+}
+
+
+
+/* ========================================
+   FINAL PROTOTYPE GALLERY
+   ======================================== */
+
+.final-gallery {
+    grid-template-columns:
+        repeat(3, 1fr);
+}
+
+
+
+/* ========================================
+   SINGLE IMAGE
+   ======================================== */
+
+.case-img {
+    display: block;
+
+    width: min(
+        600px,
+        100%
+    );
+
+    height: auto;
+
+    margin:
+        35px
+        auto
+        0;
+
+    border-radius: 22px;
+}
+
+
+
+/* ========================================
+   REFLECTION FINAL IMAGE
+   ======================================== */
+
+.reflection-final-image {
+    display: flex;
+
+    justify-content: center;
+
+    width: 100%;
+
+    margin-top: 50px;
+}
+
+
+.reflection-final-image img {
+    display: block;
+
+    width: min(
+        780px,
+        90%
+    );
+
+    height: auto;
+
+    border-radius: 24px;
+
+    box-shadow:
+        0
+        12px
+        28px
+        rgba(60, 41, 31, 0.08);
+}
+
+
+
+/* ========================================
+   BOTTOM NAVIGATION
+   ======================================== */
+
+.project-footer-nav {
+    padding:
+        75px
+        30px;
+
+    text-align: center;
+
+    background-color: var(--pink);
+}
+
+
+.back-to-work-button {
+    display: inline-block;
+
+    padding:
+        12px
+        24px;
+
+    border:
+        2px
+        solid
+        var(--brown);
+
+    border-radius: 999px;
+
+    background-color: var(--light-pink);
+
+    font-family: "Sniglet", sans-serif;
+
+    font-size: 16px;
+
+    color: var(--brown);
+
+    text-decoration: none;
+
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.back-to-work-button:hover {
+    background-color: white;
+
+    transform:
+        translateY(-2px);
+}
+
+
+
+
+/* ========================================
+   TABLET
+   ======================================== */
+
+@media (max-width: 900px) {
+
+    .navbar {
+        padding:
+            16px
+            25px;
+    }
+
+
+    .navbar .nav-links {
+        justify-content: center;
+
+        gap: 30px;
+    }
+
+
+    .maker-page .project-hero {
+        width: 90%;
+
+        padding-top: 60px;
+    }
+
+
+    .project-summary-card {
+        gap:
+            30px
+            40px;
+    }
+
+
+    .hero-image img {
+        height: 420px;
+    }
+
+
+    .case-section {
+        width: 90%;
+    }
+
+
+    .case-row {
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+    }
+
+
+    .prototype-section .case-row {
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+    }
+
+
+    .methodology-cards {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+
+    .final-gallery {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+
+    .reflection-final-image img {
+        width: min(
+            700px,
+            95%
+        );
+    }
+
+}
+
+
+
+/* ========================================
+   MOBILE
+   ======================================== */
+
+@media (max-width: 600px) {
+
+    .navbar {
+        padding:
+            15px
+            12px;
+    }
+
+
+    .navbar .nav-links {
+        gap: 20px;
+    }
+
+
+    .navbar .nav-links a {
+        font-size: 16px;
+    }
+
+
+    .maker-page .project-hero {
+        width: 90%;
+
+        padding:
+            45px
+            0
+            65px;
+    }
+
+
+    .back-link {
+        margin-bottom: 35px;
+    }
+
+
+    .maker-page .project-hero h1 {
+        font-size: 46px;
+    }
+
+
+    .project-subtitle {
+        margin-bottom: 22px;
+
+        font-size: 17px;
+    }
+
+
+    .skill-tags {
+        gap: 8px;
+
+        margin-bottom: 35px;
+    }
+
+
+    .skill-tags span {
+        padding:
+            7px
+            13px;
+
+        font-size: 12px;
+    }
+
+
+    .project-summary-card {
+        grid-template-columns: 1fr;
+
+        gap: 28px;
+
+        padding:
+            28px
+            24px;
+
+        border-radius: 22px;
+    }
+
+
+    .summary-value {
+        font-size: 16px;
+    }
+
+
+
+    /* HERO IMAGES */
+
+    .hero-gallery {
+        grid-template-columns: 1fr;
+
+        gap: 18px;
+    }
+
+
+    .hero-image {
+        padding: 12px;
+
+        border-radius: 20px;
+    }
+
+
+    .hero-image img {
+        width: 100%;
+        height: auto;
+
+        border-radius: 12px;
+    }
+
+
+
+    /* CASE STUDY */
+
+    .case-section {
+        width: 88%;
+
+        padding:
+            65px
+            0;
+    }
+
+
+    .case-section.soft-section,
+    .case-section.overview-section {
+        width: 100%;
+
+        padding:
+            65px
+            6%;
+    }
+
+
+    .case-section h2 {
+        margin-bottom: 22px;
+    }
+
+
+    .compact-heading h2 {
+        margin-bottom: 12px;
+    }
+
+
+    .case-section > p,
+    .case-text p,
+    .case-list {
+        font-size: 15px;
+    }
+
+
+    .methodology-cards,
+    .insight-cards {
+        grid-template-columns: 1fr;
+    }
+
+
+    .case-gallery,
+    .case-gallery.contain,
+    .final-gallery {
+        grid-template-columns: 1fr;
+    }
+
+
+    .case-gallery img {
+        height: auto;
+
+        object-fit: contain;
+    }
+
+
+    .prototype-section .case-gallery.contain {
+        gap: 18px;
+    }
+
+
+    .key-issues-label {
+        font-size: 14px;
+    }
+
+
+    .reflection-final-image {
+        margin-top: 35px;
+    }
+
+
+    .reflection-final-image img {
+        width: 100%;
+
+        border-radius: 18px;
+    }
+
+}
+
+
+
+/* ========================================
+   REDUCED MOTION
+   ======================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        transition: none !important;
+
+        animation: none !important;
+    }
+
+}

@@ -1,0 +1,1041 @@
+/* ========================================
+   WORK PAGE
+   ======================================== */
+
+
+/* ========================================
+   COLOURS
+   ======================================== */
+
+:root {
+    --pink: #efcbe3;
+    --light-pink: #fff8fb;
+    --cream: #f1dfcf;
+
+    --brown: #3c291f;
+    --purple: #743b5b;
+
+    --sage: #dce8d2;
+    --chip-pink: #f8dfea;
+
+    --lavender: #e9dff1;
+    --peach: #f4dfd1;
+    --soft-yellow: #f3e9c9;
+}
+
+
+
+/* ========================================
+   GLOBAL
+   ======================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+
+    background-color: var(--light-pink);
+
+    color: var(--brown);
+}
+
+
+
+/* ========================================
+   NAV
+   ======================================== */
+
+.navbar {
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+
+    width: 100%;
+
+    padding: 18px 55px;
+
+    background-color: var(--pink);
+}
+
+
+.navbar .nav-links {
+    display: flex;
+
+    justify-content: flex-end;
+    align-items: center;
+
+    gap: 55px;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+
+    background: transparent;
+}
+
+
+.navbar .nav-links li {
+    float: none;
+}
+
+
+.navbar .nav-links a {
+    padding: 0;
+
+    font-family: "Sniglet", sans-serif;
+
+    font-size: 22px;
+    font-weight: 400;
+
+    color: var(--brown);
+
+    text-decoration: none;
+}
+
+
+.navbar .nav-links a:hover {
+    background: transparent;
+
+    opacity: 0.6;
+}
+
+
+
+/* ========================================
+   WORK HERO
+   ======================================== */
+
+.work-hero {
+    max-width: 900px;
+
+    margin: 0 auto;
+
+    padding:
+        100px
+        30px
+        85px;
+
+    text-align: center;
+}
+
+
+.work-hero h1 {
+    margin:
+        0
+        0
+        20px;
+
+    font-family: "Sniglet", sans-serif;
+
+    font-size: clamp(
+        48px,
+        6vw,
+        76px
+    );
+
+    font-weight: 400;
+}
+
+
+.work-intro {
+    max-width: 720px;
+
+    margin: 0 auto;
+
+    font-family: "Sniglet", sans-serif;
+
+    font-size: 19px;
+
+    line-height: 1.55;
+}
+
+
+
+/* ========================================
+   PROJECTS
+   ======================================== */
+
+.selected-work {
+    width: min(
+        1250px,
+        90%
+    );
+
+    margin: 0 auto;
+
+    padding-bottom: 120px;
+}
+
+
+
+/* ========================================
+   PROJECT ROW
+   ======================================== */
+
+.project-row {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1.1fr)
+        minmax(0, 0.9fr);
+
+    align-items: center;
+
+    gap: clamp(
+        50px,
+        7vw,
+        100px
+    );
+
+    margin-bottom: 90px;
+
+    padding:
+        50px
+        55px;
+
+    background-color: white;
+
+    border:
+        2px
+        solid
+        rgba(60, 41, 31, 0.1);
+
+    border-radius: 34px;
+
+    box-shadow:
+        0
+        14px
+        32px
+        rgba(60, 41, 31, 0.055);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+.project-row:hover {
+    transform:
+        translateY(-4px);
+
+    box-shadow:
+        0
+        18px
+        38px
+        rgba(60, 41, 31, 0.09);
+}
+
+
+
+/* ========================================
+   PROJECT VISUAL
+   ======================================== */
+
+.project-visual {
+    position: relative;
+
+    min-width: 0;
+
+    isolation: isolate;
+}
+
+
+.project-visual img {
+    display: block;
+
+    width: 100%;
+
+    height: auto;
+
+    border-radius: 24px;
+}
+
+
+
+/* ========================================
+   PROJECT PLACEHOLDER
+   ======================================== */
+
+.project-image-placeholder {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+
+    aspect-ratio: 4 / 3;
+
+    padding: 30px;
+
+    background-color: #eadbe5;
+
+    border-radius: 24px;
+
+    font-family: "Sniglet", sans-serif;
+
+    font-size: 22px;
+
+    color: var(--purple);
+
+    text-align: center;
+}
+
+
+
+/* ========================================
+   PROJECT COPY
+   ======================================== */
+
+.project-copy {
+    min-width: 0;
+}
+
+
+.project-copy h2 {
+    margin:
+        0
+        0
+        12px;
+
+    font-family: "Sniglet", sans-serif;
+
+    font-size: clamp(
+        32px,
+        3.5vw,
+        50px
+    );
+
+    font-weight: 400;
+}
+
+
+.project-type {
+    margin:
+        0
+        0
+        22px;
+
+    font-family: "Sniglet", sans-serif;
+
+    font-size: 17px;
+
+    color: var(--purple);
+
+    line-height: 1.4;
+}
+
+
+.project-summary {
+    margin:
+        0
+        0
+        24px;
+
+    font-family: "Sniglet", sans-serif;
+
+    font-size: 17px;
+
+    line-height: 1.55;
+}
+
+
+
+/* ========================================
+   TOOL CHIPS
+   ======================================== */
+
+.project-tools {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 9px;
+
+    margin-bottom: 28px;
+}
+
+
+.project-tools span {
+    padding:
+        7px
+        13px;
+
+    border:
+        1.5px
+        solid
+        var(--brown);
+
+    border-radius: 999px;
+
+    font-family: "Sniglet", sans-serif;
+
+    font-size: 13px;
+
+    color: var(--brown);
+
+    background-color: var(--chip-pink);
+}
+
+
+
+/* ========================================
+   PROJECT ACTIONS
+   ======================================== */
+
+.project-actions {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    align-items: center;
+
+    gap: 12px;
+}
+
+
+
+/* ========================================
+   PROJECT BUTTON
+   ======================================== */
+
+.project-button {
+    display: inline-block;
+
+    padding:
+        11px
+        20px;
+
+    border:
+        2px
+        solid
+        var(--brown);
+
+    border-radius: 999px;
+
+    background-color: transparent;
+
+    font-family: "Sniglet", sans-serif;
+
+    font-size: 15px;
+
+    color: var(--brown);
+
+    text-decoration: none;
+
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.project-button:hover {
+    background-color: var(--pink);
+
+    transform:
+        translateY(-2px);
+}
+
+
+.project-button-secondary {
+    background-color: var(--chip-pink);
+}
+
+
+.project-button-secondary:hover {
+    background-color: var(--pink);
+}
+
+
+
+/* ========================================
+   BITS, PIECES, AND PIXELS
+   ======================================== */
+
+.design-archive {
+    padding:
+        95px
+        5vw
+        125px;
+
+    background-color: var(--pink);
+}
+
+
+
+/* ========================================
+   ARCHIVE HEADING
+   ======================================== */
+
+.archive-heading {
+    width: min(
+        1050px,
+        100%
+    );
+
+    margin:
+        0
+        auto
+        65px;
+
+    text-align: center;
+}
+
+
+.archive-heading h2 {
+    margin:
+        0
+        0
+        14px;
+
+    font-family: "Sniglet", sans-serif;
+
+    font-size: clamp(
+        40px,
+        4vw,
+        58px
+    );
+
+    font-weight: 400;
+}
+
+
+.archive-heading p {
+    margin: 0;
+
+    font-family: "Sniglet", sans-serif;
+
+    font-size: 17px;
+
+    line-height: 1.5;
+}
+
+
+.archive-description {
+    white-space: nowrap;
+}
+
+
+
+/* ========================================
+   MASONRY
+   ======================================== */
+
+.archive-masonry {
+    width: min(
+        1350px,
+        100%
+    );
+
+    margin: 0 auto;
+
+    column-count: 4;
+
+    column-gap: 26px;
+}
+
+
+
+/* ========================================
+   ARCHIVE ITEM
+   ======================================== */
+
+.archive-item {
+    display: inline-block;
+
+    width: 100%;
+
+    margin:
+        0
+        0
+        32px;
+
+    break-inside: avoid;
+
+    vertical-align: top;
+}
+
+/* ========================================
+   ARCHIVE MEDIA
+   ======================================== */
+
+.archive-media {
+    position: relative;
+
+    display: block;
+
+    overflow: hidden;
+
+    width: 100%;
+
+    border-radius: 20px;
+
+    background-color: white;
+
+    box-shadow:
+        0
+        7px
+        20px
+        rgba(60, 41, 31, 0.06);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+
+.archive-media img {
+    display: block;
+
+    width: 100%;
+
+    height: auto;
+}
+
+
+.archive-item:hover .archive-media {
+    transform:
+        translateY(-4px);
+
+    box-shadow:
+        0
+        13px
+        28px
+        rgba(60, 41, 31, 0.12);
+}
+
+.transparent-media {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+
+.archive-link {
+    color: inherit;
+
+    text-decoration: none;
+
+    cursor: pointer;
+}
+
+
+
+/* ========================================
+   ARCHIVE CAPTION
+   ======================================== */
+
+.archive-caption {
+    padding:
+        12px
+        4px
+        0;
+}
+
+
+.archive-caption h3 {
+    margin:
+        0
+        0
+        3px;
+
+    font-family: "Sniglet", sans-serif;
+
+    font-size: 17px;
+
+    font-weight: 400;
+
+    color: var(--brown);
+}
+
+
+.archive-caption p {
+    margin: 0;
+
+    font-family: "Sniglet", sans-serif;
+
+    font-size: 13px;
+
+    line-height: 1.4;
+
+    color: var(--purple);
+}
+
+
+
+/* ========================================
+   PDF / REEL BADGES
+   ======================================== */
+
+.archive-badge {
+    position: absolute;
+
+    top: 12px;
+    right: 12px;
+
+    z-index: 2;
+
+    padding:
+        6px
+        10px;
+
+    border-radius: 999px;
+
+    background-color:
+        rgba(255, 248, 251, 0.94);
+
+    font-family: "Sniglet", sans-serif;
+
+    font-size: 11px;
+
+    color: var(--brown);
+
+    box-shadow:
+        0
+        3px
+        9px
+        rgba(60, 41, 31, 0.08);
+}
+
+
+
+/* ========================================
+   REEL PLAY BUTTON
+   ======================================== */
+
+.reel-play {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 52px;
+    height: 52px;
+
+    border-radius: 50%;
+
+    background-color:
+        rgba(255, 248, 251, 0.9);
+
+    font-size: 17px;
+
+    color: var(--brown);
+
+    transform:
+        translate(-50%, -50%);
+
+    transition:
+        transform 0.2s ease;
+}
+
+
+.archive-link:hover .reel-play {
+    transform:
+        translate(-50%, -50%)
+        scale(1.08);
+}
+
+
+
+/* ========================================
+   PLACEHOLDERS
+
+   These only exist until you replace them
+   with your actual archive images.
+   ======================================== */
+
+.archive-placeholder {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+
+    padding: 25px;
+
+    font-family: "Sniglet", sans-serif;
+
+    font-size: 16px;
+
+    color: var(--purple);
+
+    text-align: center;
+}
+
+
+
+/* Square */
+
+.archive-square {
+    aspect-ratio: 1 / 1;
+
+    background-color: var(--sage);
+}
+
+
+
+/* Portrait poster */
+
+.archive-poster {
+    aspect-ratio: 3 / 4;
+
+    background-color: var(--lavender);
+}
+
+
+
+/* Landscape */
+
+.archive-landscape {
+    aspect-ratio: 4 / 3;
+
+    background-color: var(--peach);
+}
+
+
+
+/* Instagram Reel / vertical video */
+
+.archive-reel {
+    aspect-ratio: 9 / 16;
+
+    background-color: var(--chip-pink);
+}
+
+
+
+/* Paper / PDF preview */
+
+.archive-paper {
+    aspect-ratio: 8.5 / 11;
+
+    background-color: #fffdf8;
+
+    border:
+        1px
+        solid
+        rgba(60, 41, 31, 0.07);
+}
+
+
+
+/* ========================================
+   REAL ARCHIVE IMAGES
+   ======================================== */
+
+/*
+   Once you use actual images, you DON'T
+   need to assign an aspect ratio.
+
+   Example:
+
+   <div class="archive-media">
+       <img
+           src="Assets/archive/poster.png"
+           alt="..."
+       >
+   </div>
+
+   The original image shape will be kept.
+*/
+
+
+
+
+
+
+/* ========================================
+   LARGE TABLET
+   ======================================== */
+
+@media (max-width: 1100px) {
+
+    .archive-masonry {
+        column-count: 3;
+    }
+
+}
+
+
+
+/* ========================================
+   TABLET
+   ======================================== */
+
+@media (max-width: 900px) {
+
+    .navbar {
+        padding:
+            16px
+            25px;
+    }
+
+
+    .navbar .nav-links {
+        justify-content: center;
+
+        gap: 30px;
+    }
+
+
+    .project-row {
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+
+        padding:
+            40px
+            35px;
+
+        margin-bottom: 70px;
+    }
+
+
+    .archive-description {
+        white-space: normal;
+    }
+
+
+    .archive-masonry {
+        column-count: 2;
+
+        column-gap: 22px;
+    }
+
+}
+
+
+
+/* ========================================
+   MOBILE
+   ======================================== */
+
+@media (max-width: 600px) {
+
+    .navbar {
+        padding:
+            15px
+            12px;
+    }
+
+
+    .navbar .nav-links {
+        gap: 20px;
+    }
+
+
+    .navbar .nav-links a {
+        font-size: 16px;
+    }
+
+
+    .work-hero {
+        padding:
+            70px
+            22px
+            60px;
+    }
+
+
+    .work-intro {
+        font-size: 16px;
+    }
+
+
+    .selected-work {
+        width: 92%;
+    }
+
+
+    .project-row {
+        padding:
+            25px
+            22px;
+
+        border-radius: 25px;
+    }
+
+
+    .project-summary {
+        font-size: 15px;
+    }
+
+
+    .project-actions {
+        gap: 10px;
+    }
+
+
+    .project-button {
+        padding:
+            10px
+            16px;
+
+        font-size: 14px;
+    }
+
+
+    .design-archive {
+        padding:
+            70px
+            22px
+            85px;
+    }
+
+
+    .archive-heading {
+        margin-bottom: 45px;
+    }
+
+
+    .archive-description {
+        white-space: normal;
+    }
+
+
+    .archive-masonry {
+        column-count: 1;
+
+        column-gap: 0;
+
+        width: min(
+            440px,
+            100%
+        );
+    }
+
+
+    .archive-item {
+        margin-bottom: 28px;
+    }
+
+}
+
+
+
+/* ========================================
+   REDUCED MOTION
+   ======================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        transition: none !important;
+
+        animation: none !important;
+    }
+
+}
